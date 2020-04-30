@@ -16,7 +16,7 @@ const Chart = ({data:{confirmed,deaths,recovered},country}) => {
 
         console.log(dailyData);
         fectApi();
-    }, []);
+    }, [dailyData]);
     
     const lineChart =(
         dailyData.length
